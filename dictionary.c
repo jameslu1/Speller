@@ -207,7 +207,7 @@ int hashFunc(char* nextWord)
     {
         hashCode *= (int) *(nextWord + 1) - 'a' + 1;
     }
-    else
+    else if (*(nextWord + 1) >= 'A' && *(nextWord + 1) <= 'Z')
     {
         hashCode *= (int) *(nextWord + 1) - 'A' + 1;
     }
